@@ -27,7 +27,7 @@ const Suggestions = ({categoryId}) => {
             </div>
             <div className='suggestion-details'>
                 <div className="suggestion-title">
-                    <h2>{a.snippet.title}</h2>
+                    <h2>{a.snippet.title.slice(0,30)}</h2>
                     <button><i className="fa-solid fa-ellipsis"></i></button>
                 </div>
                 <p>{a.snippet.channelTitle}</p>

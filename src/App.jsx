@@ -8,6 +8,7 @@ import VideoPlayer from './Components/videoPlayer/VideoPlayer'
 
 function App() {
   const [category,setCategory]=useState(0)
+ 
   return (
     <>
     <Navbar/>

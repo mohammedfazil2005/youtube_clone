@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className='sticky-top'>
             <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
-                  <Link to={'/'}>  <a className="navbar-brand" href="#"><img id='logo' src="https://www.koahspearguns.com/uploads/1/8/0/5/18055309/published/youtube-logo.jpg?1724159757" alt="" /></a></Link>
+                  <Link to={'/'} className="navbar-brand"><img id='logo' src="https://www.koahspearguns.com/uploads/1/8/0/5/18055309/published/youtube-logo.jpg?1724159757" alt="" /></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>

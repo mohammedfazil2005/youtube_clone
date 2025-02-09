@@ -14,7 +14,7 @@
 }
 
 .suggestion-thumbnail img{
-    width:400px;
+    width:450px;
     border-radius: 10px;
 }
 .suggestion-details{
@@ -28,7 +28,7 @@
 }
 .suggestion-title h2{
     font-size: 21px;
-    width: 220px;
+  
 }
 .suggestion-title button{
     border: none;
@@ -39,4 +39,13 @@
 .suggestions-view-count{
     display: flex;
     gap: 10px;
+}
+
+@media screen and (max-width:986px) {
+  .suggestion-thumbnail img{
+    width: 100%;
+  }
+  .suggestion-title h2{
+    width: 100%;
+  }
 }
