@@ -1,0 +1,42 @@
+.suggestions-div-parent{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+    gap: 10px;
+    border-left: 1px solid lightgrey;
+}
+
+.suggestion-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.suggestion-thumbnail img{
+    width:400px;
+    border-radius: 10px;
+}
+.suggestion-details{
+    display: flex;
+    flex-direction: column;
+}
+.suggestion-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.suggestion-title h2{
+    font-size: 21px;
+    width: 220px;
+}
+.suggestion-title button{
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.suggestions-view-count{
+    display: flex;
+    gap: 10px;
+}

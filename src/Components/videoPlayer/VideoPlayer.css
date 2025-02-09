@@ -1,0 +1,10 @@
+.videoplayer-parent{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:986px) {
+    .videoplayer-parent{
+        flex-direction: column;
+    }
+}

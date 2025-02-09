@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './DisplayVideo.css'
-import { apiKey } from '../../data'
+import { apiKey, valueConverter } from '../../data'
 import moment from 'moment/moment'
 import { Link } from 'react-router-dom'
 const DisplayVideo = ({category,setCategory}) => {
@@ -14,17 +14,8 @@ const DisplayVideo = ({category,setCategory}) => {
     }
    
     
-    const valueConverter=(value)=>{
-        if(value>1000000){
-            return Math.floor(value/1000000)+"M"
-        }else if(value>=1000){
-            return Math.floor(value/1000)+"K"
-        }else{
-            return value
-        }
-    }
+    
   
-
     useEffect(()=>{
         fetchVideos()
     },[category])
@@ -34,7 +25,7 @@ const DisplayVideo = ({category,setCategory}) => {
     <div className='display-video-main'>
         <div className="display-video-parent">
          {videos.map((video)=>(
-           <Link to={`/video/10/40`}>   <div className="video-box">
+           <Link to={`/video/${video.snippet.categoryId}/${video.id}`}>   <div className="video-box">
               <div>
                   <img src={video.snippet.thumbnails.medium.url} alt="" />
               </div>

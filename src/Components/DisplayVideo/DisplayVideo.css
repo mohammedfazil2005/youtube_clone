@@ -26,3 +26,9 @@
     display: flex;
     gap: 10px;
 }
+
+@media screen and (max-width:530px) {
+    .display-video-main{
+        margin-left: 0px;
+    }
+}

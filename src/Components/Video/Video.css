@@ -1,0 +1,137 @@
+.video-parent-div{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    gap: 10px;
+    
+
+}
+
+.video-main iframe{
+    width: 100%;
+    height: 32vw;
+    border-radius: 10px;
+}
+.heading h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+.channel-details{
+    display: flex;
+    justify-content: space-between;
+}
+.channel-detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.channel-det{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+ 
+}
+.channel-det img{
+    width: 40px;
+    border-radius: 50%;
+}
+.channel-det button{
+    padding: 7px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+
+}
+
+.channel-promotion{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.channel-promotion button{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    border: none;
+}
+.channel-promotion button i{
+    margin: 0px 7px;
+}
+.video-details{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(206, 206, 206, 0.307);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.views-time{
+    display: flex;
+    gap: 10px;
+}
+
+.comments-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.comments-div h1{
+    font-size: 23px;
+}
+.comment-details{
+    display: flex;
+    gap: 10px;
+}
+.comment-dp img{
+    border-radius: 50%;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.comment p{
+    width: 350px;
+}
+.comment-name-time{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.comment-name-time h2{
+    font-size: 17px;
+}
+
+.comment-like{
+    display: flex;
+    gap: 40px;
+}
+.comment-like button{
+    background-color: transparent;
+    border: none;
+    font-weight: 400;
+}
+.comment-like button i{
+    font-size: 20px;
+}
+
+@media screen and (max-width:986px) {
+    .video-main iframe{
+        width: 100%;
+        height:400px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width:719px) {
+    .channel-details{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .channel-promotion{
+        display: flex;
+       
+    }
+}

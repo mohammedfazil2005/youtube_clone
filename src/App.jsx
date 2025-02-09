@@ -13,8 +13,9 @@ function App() {
     <Navbar/>
     <Routes>
       <Route element={<Home category={category} setCategory={setCategory}/>} path='/'></Route>
-      <Route element={<VideoPlayer/>} path='/video/:category/:VideoId'></Route>
+      <Route element={<VideoPlayer/>} path='/video/:categoryId/:VideoId'></Route>
     </Routes>
+
     
     </>
   )
