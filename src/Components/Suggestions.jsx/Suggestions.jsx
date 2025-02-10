@@ -11,7 +11,7 @@ const Suggestions = ({categoryId}) => {
         const serverData=await serverResponce.json()
         setData(serverData.items)
     }
-    console.log('sug',data)
+    
     useEffect(()=>{
         fetchSuggestions()
     },[apiKey])
@@ -20,7 +20,7 @@ const Suggestions = ({categoryId}) => {
      <div className="suggestions-div-parent">
        {data&&(
          data.map((a)=>(
-            <Link to={`/video/${a.snippet.categoryId}/${a.id}`}>
+            <Link to={`/video/${a.snippet.categoryId}/${a.id}`} key={a.id}>
             <div className="suggestion-video">
             <div className='suggestion-thumbnail'>
                 <img src={a.snippet.thumbnails.medium.url} alt="" />

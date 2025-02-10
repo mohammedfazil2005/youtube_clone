@@ -97,7 +97,8 @@ const Video = () => {
                 <button onClick={subscribeButton} style={subscribed=="Subscribed"?{backgroundColor:"rgba(0, 0, 0, 0.499)"}:{backgroundColor:"black"}}>{subscribed=="Subscribed"?"UnSubscribe":"Subscribe"}</button>
             </div>
             <div className="channel-promotion">
-                <button><i className="fa-regular fa-thumbs-up"></i>{valueConverter(data.statistics.likeCount)}<i className="fa-regular fa-thumbs-down"></i></button>
+                <button><i className="fa-regular fa-thumbs-up"></i>{valueConverter(data.statistics.likeCount)}</button>
+                <button><i className="fa-regular fa-thumbs-down"></i></button>
                 <button><i className="fa-solid fa-share"></i> Share</button>
                 <button><i className="fa-solid fa-download"></i>Download</button>
                 <button><i className="fa-solid fa-ellipsis"></i></button>
@@ -114,7 +115,7 @@ const Video = () => {
                 <h1>{valueConverter(data.statistics.commentCount)} comments</h1>
                 {comments&&
                 comments.map((a)=>(
-                    <div className='comment-details'>
+                    <div className='comment-details' key={a.id}>
                     <div className="comment-dp">
                         <img src={a.snippet.topLevelComment.snippet.authorProfileImageUrl} alt="Profile" loading='lazy' />
                     </div>

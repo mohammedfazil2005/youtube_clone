@@ -44,7 +44,7 @@ const DisplayVideo = ({category,setCategory,search}) => {
          {videos.length==0?
         <CircularProgress />:
         videos.map((video)=>{
-            const videoId = video.id.videoId || video.id; // Handle search & popular video IDs
+            const videoId = video.id.videoId || video.id; 
             const categoryId = video.snippet?.categoryId || category;
 
             return(

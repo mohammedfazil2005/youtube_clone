@@ -55,6 +55,10 @@
     background-color: whitesmoke;
     border: none;
 }
+
+.channel-promotion button:active{
+  color: red;
+}
 .channel-promotion button i{
     margin: 0px 7px;
 }
@@ -112,6 +116,9 @@
     background-color: transparent;
     border: none;
     font-weight: 400;
+}
+.comment-like button:active{
+    color: red;
 }
 .comment-like button i{
     font-size: 20px;
