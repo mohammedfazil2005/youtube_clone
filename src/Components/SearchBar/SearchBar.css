@@ -8,16 +8,16 @@
     align-items: center;
 }
 .searchBar-parent input{
-    width: 600px;
-    padding: 10px;
+    width: 800px;
+    padding: 12px;
     border-radius: 20px 0px 0px 20px;
-    border: 1px solid lightgray;
+    border: 2px solid lightgray;
     outline: none;
     cursor: pointer;
 }
 
 .searchBar-parent button{
-    padding: 10px;
+    padding: 12px;
     border: 1px solid lightgray;
     border-radius: 0px 20px 20px 0px;
     width: 50px;
@@ -29,4 +29,11 @@
 .searchBar-parent button i{
     font-size: 20px;
     color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width:861px) {
+    .search-parent{
+        margin: 0px 10px;
+    }
+    
 }

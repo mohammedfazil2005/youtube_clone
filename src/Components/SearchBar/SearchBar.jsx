@@ -7,14 +7,21 @@ const SearchBar = ({search,setSearch}) => {
         setInput(value.toLowerCase())
     }
     const onClickHandleSearch=()=>{
-        setSearch(input.toLowerCase())
+        setSearch(input)
+        
+    }
+
+    const eventKey=(event)=>{
+        if(event.key=="Enter"){
+            onClickHandleSearch()
+        }
     }
   
     return (
         <div className='search-parent sticky-top'>
             <div className="searchBar-parent">
-                <input className="" type="search" placeholder="Search" aria-label="Search" onChange={(e)=>onChangeInput(e.target.value)} />
-                <button id='searchbutton' onClick={onClickHandleSearch} type="submit"><i className="fa-solid fa-magnifying-glass"></i></button>
+                <input className="" type="search" placeholder="Search" aria-label="Search" onKeyDown={eventKey} onChange={(e)=>onChangeInput(e.target.value)} />
+                <button id='searchbutton' onClick={onClickHandleSearch}  type="submit"><i className="fa-solid fa-magnifying-glass"></i></button>
             </div>
 
         </div>

@@ -18,9 +18,9 @@ const SideBar = ({category,setCategory}) => {
   return (
     <div className='side-main'>
         <div className="sidebar-parent">
-             {allCategories.map((category)=>(
-                <div onClick={()=>setCategory(category.idNo)} key={category.idNo}>
-                <h3> <i className={category.catImg}></i>{category.catName}</h3>
+             {allCategories.map((eachcategory)=>(
+                <div onClick={()=>setCategory(eachcategory.idNo)} key={eachcategory.idNo} style={category==eachcategory.idNo?{backgroundColor:'rgba(192, 185, 185, 0.26)'}:{border:'none'}}>
+                <h3> <i className={eachcategory.catImg}></i>{eachcategory.catName}</h3>
             </div>
              ))}
         </div>

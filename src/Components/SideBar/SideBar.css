@@ -24,16 +24,32 @@ h3{
    margin-left: 20px;
    margin-top: 2px;
    cursor: pointer;
+   border-radius: 4px;
+   padding: 2px;
+   width: 170px;
     
+}
+.sidebar-parent div:hover{
+    background-color:rgb(255, 244, 244);
 }
 .sidebar-parent div h3{
     font-size: 18px;
     text-align: center;
     font-weight: 400;
+    padding: 2px;
+    border-radius: 2px;
 }
 .sidebar-parent div h3 i{
     margin-right: 20px;
     font-size: 17px;
+}
+
+@media screen and (max-width:920px) {
+    .side-main{
+        margin-top:3px  ;
+ 
+    }
+   
 }
 
 @media screen and (max-width:530px) {
